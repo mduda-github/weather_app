@@ -49,7 +49,6 @@ class Chart extends Component {
         } 
     }
     render() {
-        console.log(this.state.chartData)
         return <div className="chart">
             <Line 
                 data = {this.state.chartData}

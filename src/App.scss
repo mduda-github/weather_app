@@ -95,6 +95,7 @@ a, button, .button {
 .info {
   width: 100vw;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   .row--top {
     height: 50vh;
     display: flex;
@@ -157,7 +158,37 @@ a, button, .button {
       color: rgba(255,255,255,0.7);
     }
     .chart {
-      background-color: rgba(255, 255, 255, 0.05);
+      background-color: rgba(255, 255, 255, 0.1);
     }
   }
+}
+
+/* Appear */
+.fade-appear {
+  opacity: 0;
+}
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 600ms linear
+}
+
+/* Enter */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 600ms linear 600ms
+}
+
+/* Exit */
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 600ms linear
+}
+.fade-exit-done {
+  opacity: 0;
 }

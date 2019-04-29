@@ -8,18 +8,23 @@
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "chart.js": "^2.8.0",
+    "gh-pages": "^2.0.1",
+    "moment": "^2.24.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-chartjs-2": "^2.7.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-transition-group": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -33,7 +38,7 @@
   "bugs": {
     "url": "https://github.com/isthatthedeer/weather-app/issues"
   },
-  "homepage": "https://github.com/isthatthedeer/weather-app#readme",
+  "homepage": "https://isthatthedeer.github.io/weather-app",
   "browserslist": [
     ">0.2%",
     "not dead",
