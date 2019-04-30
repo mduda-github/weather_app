@@ -18,5 +18,5 @@ Application based on OpenWeatherMap's API, which allows you to view not only the
  
 # Screenshot
 
-![Image](https://github.com/isthatthedeer/weather_app/blob/master/src/mockups/Mockup.png | width=900)
-![Image](https://github.com/isthatthedeer/weather_app/blob/master/src/mockups/Mockup2.png | width=900)
+![Image](https://github.com/isthatthedeer/weather_app/blob/master/src/mockups/Mockup.png)
+![Image](https://github.com/isthatthedeer/weather_app/blob/master/src/mockups/Mockup2.png =900)
