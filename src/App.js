@@ -14,13 +14,13 @@ class App extends React.Component {
 
   componentDidMount() {
       this.updateDimensions();
-      window.addEventListener("resize", this.updateDimensions.bind(this));
+      window.addEventListener("resize", this.updateDimensions());
   }
 
   componentWillUnmount() {
-      window.removeEventListener("resize", this.updateDimensions.bind(this));
+      window.removeEventListener("resize", this.updateDimensions());
   }
-  
+
   render() {
     return (
         <HashRouter>

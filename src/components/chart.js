@@ -27,7 +27,7 @@ class Chart extends Component {
                         display: false,
                         ticks: {
                             display: false,
-                            max: Math.max.apply(null, this.props.data.map(el => {return el.tempMax}).slice(2)) + 2,
+                            max: Math.max.apply(null, this.props.data.map(el => {return el.tempMax}).slice(2)) + 3,
                             min: Math.min.apply(null, this.props.data.map(el => {return el.tempMin}).slice(2)) - 2,
                             stepSize: 1
                         },

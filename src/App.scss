@@ -6,23 +6,13 @@ body {
   display: flex;
 }
 
-#background-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: 100vh;
-  z-index: -100;
-}
-
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background-image: linear-gradient(to right top, #ffe53b, #ffbf0c, #ff9600, #ff670c, #ff2525);
 }
 
@@ -89,6 +79,12 @@ a, button, .button {
       color: #ff670c;
       width: 80%;
     }
+    .row {
+      display: flex;
+      a {
+        margin-right: 2rem;
+      }
+    }
   }
 }
 
@@ -98,6 +94,7 @@ a, button, .button {
   height: calc(var(--vh, 1vh) * 100);
   .row--top {
     height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,6 +124,7 @@ a, button, .button {
   }
   .row--bottom {
     height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -169,7 +167,7 @@ a, button, .button {
 }
 .fade-appear.fade-appear-active {
   opacity: 1;
-  transition: opacity 600ms linear
+  transition: opacity 450ms linear
 }
 
 /* Enter */
@@ -178,7 +176,7 @@ a, button, .button {
 }
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 600ms linear 600ms
+  transition: opacity 450ms linear 
 }
 
 /* Exit */
@@ -187,8 +185,30 @@ a, button, .button {
 }
 .fade-exit.fade-exit-active {
   opacity: 0;
-  transition: opacity 600ms linear
+  transition: opacity 450ms linear
 }
 .fade-exit-done {
   opacity: 0;
+}
+
+$breakpoint-mobile: 481px;
+@media (min-width: $breakpoint-mobile) {
+  .welcome, .search, .info {
+    height: 640px;
+    width: 360px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    justify-content: center;
+    .row--top, .row--bottom {
+      height: 320px;
+      .forecast__bottom {
+        width: 360px;
+      }
+    }
+  }
+  .search {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
 }

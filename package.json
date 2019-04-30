@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/isthatthedeer/weather-app.git"
+    "url": "git+https://github.com/isthatthedeer/weather_app.git"
   },
   "author": "Marcin Duda",
   "license": "ISC",
@@ -36,9 +36,9 @@
     "extends": "react-app"
   },
   "bugs": {
-    "url": "https://github.com/isthatthedeer/weather-app/issues"
+    "url": "https://github.com/isthatthedeer/weather_app/issues"
   },
-  "homepage": "https://isthatthedeer.github.io/weather-app",
+  "homepage": "https://isthatthedeer.github.io/weather_app",
   "browserslist": [
     ">0.2%",
     "not dead",
